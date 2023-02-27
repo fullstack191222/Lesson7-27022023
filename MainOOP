@@ -1,0 +1,71 @@
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+       /* Animal cat = new Animal();
+        Animal dog = new Animal();
+        Animal animal3 = new Animal();
+        cat.specie = "cat";
+        cat.age = 4;
+        cat.color = "grey";
+        dog.color = "yellow";
+        dog.age = 14;
+        dog.specie = "dog";
+        animal3.specie = "fish";
+        animal3.color = "blue";
+        animal3.age = 1;
+        System.out.println(dog.specie);//"dog"
+
+        System.out.println(cat.age); //4*/
+        //animal3.saySomething(); //i am unknown animal
+       // dog.saySomething();//woof
+       // cat.saySomething();//I am unknown animal
+
+
+        //Exercise
+        //part 1.
+        //Create class Person with three attributes name age and surname.
+        //create method printPerson inside the class which will print age + surname + name
+        //part 2.
+        //create 3 instances of the person
+        //populate the attributes and call to the method printPerson for each person.
+
+        /*Person aryaStark = new Person();
+        Person johnSnow = new Person();
+        aryaStark.age = 10;
+        aryaStark.name = "Arya";
+        aryaStark.surname = "Stark";
+        johnSnow.surname = "Snow";
+        johnSnow.name = "John";
+        johnSnow.age = 18;
+     *//*   johnSnow.printPerson();
+        aryaStark.printPerson();*//*
+
+        johnSnow.name = "Billy";
+      //  johnSnow.printPerson();
+
+       //CONSTRUCTOR.
+    //    Person bobMarley = new Person();
+      *//*  bobMarley.age = 50;
+        bobMarley.name = "BOB";
+        bobMarley.surname = "Marley";
+        */
+
+        Person willSmith = new Person("Will");
+     //   System.out.println(willSmith.name);
+        willSmith.age = 60;
+        willSmith.surname = "Smith";
+
+    //    willSmith.printPerson();
+        //create constructor which accepts 3 parameters : age name and surname
+        // it set the values according to the parameters.
+        Person denyT = new Person("Deynerys", "Targaryan", 20);
+     //   denyT.printPerson();
+//        System.out.println(denyT.isMarried);
+        denyT.marry();
+      //  denyT.printPerson();
+        denyT.divorce();
+       // denyT.printPerson();
+        denyT.divorce();
+    }
+}
