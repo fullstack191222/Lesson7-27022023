@@ -1,0 +1,13 @@
+public class Animal {
+    public int age;
+    public String specie;
+    public String color;
+
+    public void saySomething() {
+        if (specie.equals("dog")) {
+            System.out.println("woof woof");
+        } else {
+            System.out.println("I am unknown animal");
+        }
+    }
+}
