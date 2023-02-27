@@ -1,0 +1,43 @@
+public class Person {
+    public String name;
+    public String surname;
+    public int age;
+
+    public boolean isMarried = false;
+
+    //constructor
+    public Person (String userName) {
+        name = userName;
+    }
+
+    public Person (String name, String surname, int age) {
+        this.name = name;
+        this.surname = surname;
+        this.age = age;
+    }
+
+    public void printPerson() {
+        System.out.println("My name is " + name + " " + surname + " And my age is " + age);
+        if (this.isMarried == true) {
+            System.out.println("I am married");
+        } else {
+            System.out.println("I am not married");
+        }
+    }
+
+    public void marry() {
+        this.isMarried = true;
+    }
+
+    public void divorce() {
+        if (this.isMarried) {
+            isMarried = false;
+            System.out.println("DIVORCED");
+        } else {
+            System.out.println("Cannot divorce");
+        }
+    }
+
+
+
+}
