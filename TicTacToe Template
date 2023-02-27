@@ -1,0 +1,54 @@
+public class Main {
+    public static void main(String[] args) {
+        char playerX = 'X';
+        char playerO = 'O';
+        char currentPlayer = playerX;
+        char[][] board = {
+                {'_','_','_'},
+                {'_','_','_'},
+                {'_','_','_'}};
+
+        printBoard();
+
+        //game here
+        while (!isGameOver()) {//till the game is not over)
+            makeMove();
+            printBoard();
+            switchPlayer();
+        }
+
+    }
+
+    private static void switchPlayer() {
+        //current player need be switched from X to O or wise versa
+    }
+
+    private static void makeMove() {
+        //two scanners to get row and column .
+        //check that cell is empty ('_')
+
+        //to put on correct cell X or O depends on currentPlayer .
+    }
+
+    private static boolean isGameOver() {
+        boolean gameOver = isWinner() || isBoardFull();
+        return gameOver;
+    }
+
+
+    private static void printBoard() {
+    }
+
+
+    private static boolean isBoardFull() {
+        //to check board that all cells that all not '_'
+        return false;
+    }
+
+    private static boolean isWinner() {
+        //check all rows of the board
+        //check all columns
+        //check diagonals
+        return false;
+    }
+}
