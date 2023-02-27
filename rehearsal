@@ -1,0 +1,63 @@
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        //Rehearsal
+        //sum 10 15
+        //int firstSum = sumTwoValues(10, 15); //-->> 25
+
+        //System.out.println(firstSum);
+
+        // 1. Write a value-returning method, isVowel that
+        // returns the value true if a given character is a vowel
+        // , and otherwise returns false.
+        //  2. write a  method that accepts a
+        // string from user and count number of vowels in that string.
+
+/*
+        System.out.println(isVowel('a'));
+        System.out.println(isVowel('p'));*/
+
+        System.out.println("the number of vawels is " + countTextVowels());
+
+    }
+
+    // input = tortoise  ---> 4
+    // 1. taking string .. create sum integer which will hold the sum
+    // 2. loop for all chars of string.
+    // 3. check for each char if it is vowel
+    // 4. if vowel add to the sum (aggregate)
+    // 5. return sum from chapter 1.
+    static int countTextVowels() {
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("please input text we will count number of vowels");
+        String inputText = scanner.nextLine();
+        int sum = 0;
+        for (int i = 0; i < inputText.length(); i++) { // "lesson"
+            char character = inputText.charAt(i);//returns char at position i
+            boolean isVowel = isVowel(character); //true or false depends if vowel or not
+            if (isVowel==true) { //checking if current char is vowel
+                sum++;
+            }
+        }
+        return sum;
+    }
+
+
+
+    //method which accepts char and return true if it is vowel and false otherwise.
+    static boolean isVowel(char charToCheck) {
+        boolean result = false;
+        //a e i o u  vowels.
+        if (charToCheck == 'a' || charToCheck == 'e' || charToCheck == 'i' || charToCheck == 'o' || charToCheck == 'u') {
+            result = true;
+        }
+        return result;
+    }
+
+    static int sumTwoValues (int  firstNumber, int secondNumber) {
+        int sum = firstNumber + secondNumber;//10 + 15 --> 25
+        return sum;
+    }
+
+}
